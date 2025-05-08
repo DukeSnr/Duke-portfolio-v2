@@ -139,3 +139,18 @@
   button:hover {
     background-color: #0056b3;
   }
+
+  #typing-text {
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s step-end infinite;
+    font-size: xx-large;
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
