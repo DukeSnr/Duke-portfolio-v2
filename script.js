@@ -1,4 +1,4 @@
-const texts = ["Self[Tutorial]-Taught Web-developer.", "Professional code breaker aka Mr 404.", "I build projects."];
+const texts = ["Self [Tutorial]-Taught Web-developer.", "Professional code breaker aka Mr 404.", "I build projects."];
 let index = 0;
 let charIndex = 0;
 const typingSpeed = 100; // Speed of typing
