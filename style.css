@@ -67,6 +67,27 @@
     font-size: 1.25rem;
     color: #555;
   }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-img {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
   
   /* Projects Section */
   .projects {
