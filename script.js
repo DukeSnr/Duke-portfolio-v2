@@ -29,4 +29,26 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(type, delayBetweenTexts);
+
+  const toggle = document.getElementById("dark-mode-toggle");
+  const body = document.body;
+
+  // Load saved mode
+  if (localStorage.getItem("dark-mode") === "enabled") {
+    body.classList.add("dark-mode");
+  }
+
+  toggle.addEventListener("click", function () {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+      localStorage.setItem("dark-mode", "enabled");
+      toggle.textContent = "☀️";
+    } else {
+      localStorage.setItem("dark-mode", "disabled");
+      toggle.textContent = "🌙";
+    }
+  });
+
+  // Set correct icon on load
+  toggle.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
 });

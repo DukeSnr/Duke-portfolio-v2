@@ -175,3 +175,55 @@
       border-color: transparent;
     }
   }
+
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #181818;
+    color: #f1f1f1;
+  }
+
+  body.dark-mode .project-card {
+    background-color: #232323;
+    border-color: #333;
+  }
+
+  body.dark-mode .about,
+  body.dark-mode .contact,
+  body.dark-mode .projects {
+    background-color: transparent;
+  }
+
+  body.dark-mode .hero-img {
+    border: 2px solid #333;
+  }
+
+  body.dark-mode button {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+
+  body.dark-mode button:hover {
+    background-color: #555;
+  }
+
+  /* Dark mode toggle button */
+  #dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #fff;
+    color: #111;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  body.dark-mode #dark-mode-toggle {
+    background: #232323;
+    color: #f1f1f1;
+  }
